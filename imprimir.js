@@ -33,8 +33,8 @@ function registro(){
 }
 
 function limpiar(){
-    usuarioTXT.value = "";
-    passwordTXT.value = "";
+    usuarioTXT.value= "";
+    passwordTXT.value= "";
 }
 
 function tooglePsw(){
