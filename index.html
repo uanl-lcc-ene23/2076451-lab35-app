@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="estilo.css">
-<title>Ola mundo</title>
+<title>Pagina </title>
 <html>
     <body>
     <center>
-        <h1>Imprimir en consola</h1>
-
-        <P> Escribe algo abajo </P>
-
-        <input type="text" id="campoTexto">
-
-        <button onclick="imprimir()">Imprimir mensaje en consola</button>
-        <button onclick="limpiar()">Limpiar</button>
+        <div class="container" id="2">
+    
+            <div class="fila">
+            <label for="Usuario">Usuario:</label>
+            <input type="text" id="Usuario">
+            </div>
+        
+            <div class="fila">
+            <label for="password">Password:</label>
+            <input type="password" id="password"><span id="verPsw" onclick="tooglePsw()"></span>
+            </div>
+        
+            <div class="fila botones">
+             <button onclick="login()">Iniciar Sesion</button>
+             <button onclick="registro()">Registro</button>
+            </div>
+    
+            <p id="mensaje"></p>  
     </center>
     </body>
     <script src="imprimir.js"></script>
