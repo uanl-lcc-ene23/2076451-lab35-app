@@ -1,48 +1,22 @@
-// var campoTexto = document.getElementById("campoTexto")
+<ion-app>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Presupuesto</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-// console.log(campoTexto);
+<ion-content class="ion-padding">
+    <ion-label>Monto:</ion-label>
+    <ion-input type="Text" id="Monto"></ion-input>
 
-// function imprimir ()
-// {
-//     console.log(campoTexto.value);
-// }
+    <div class="fila">
+        <ion-label>Monto:</ion-label>
+        <ion-input type="Text" id="Monto"></ion-input>
+    </div>
 
-// //Función para limpiar la caja de texto
-// function limpiar()
-// {
-//     //console.clear(campoTexto.value); PARA LIMPIAR TODA LA CONSOLA (COMO ELIMINARLA)
-//     campoTexto.value="";
-// }
-
-let usuarioTXT = document.getElementById("Usuario");
-let passwordTXT = document.getElementById("password");
-let p = document.getElementById("mensaje");
-
-function login(){
-    //"Iniciaste sesión correctamente"
-    p.innerHTML = "Login correcto, " + usuarioTXT.value;
-
-    limpiar();
-}
-
-function registro(){
-    //Registraste la sesión correctamente
-    p.innerHTML = "Registro completo, " + usuarioTXT.value;
-
-    limpiar();
-}
-
-function limpiar(){
-    usuarioTXT.value= "";
-    passwordTXT.value= "";
-}
-
-function tooglePsw(){
-    password.value= Text;
-}
-
-/*function tooglePssw()
-{
-    1. CAMBIAR EL ATRIBUTO TYPE
-    2. CAMBIA EL TEXTO DE SPAN
-}*/
+    <div class="fila">
+        <ion-button onclick="guardar">Guardar</ion-button>
+    </div>
+   //<h1>Main Content</h1>
+</ion-content>
+</ion-app>

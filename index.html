@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="estilo.css">
-<title>Pagina </title>
+<head>
 <html>
-    <body>
-    <center>
-        <div class="container" id="2">
-    
-            <div class="fila">
-            <label for="Usuario">Usuario:</label>
-            <input type="text" id="Usuario">
-            </div>
-        
-            <div class="fila">
-            <label for="password">Password:</label>
-            <input type="password" id="password"><span id="verPsw" onclick="tooglePsw()"></span>
-            </div>
-        
-            <div class="fila botones">
-             <button onclick="login()">Iniciar Sesion</button>
-             <button onclick="registro()">Registro</button>
-            </div>
-    
-            <p id="mensaje"></p>  
-    </center>
-    </body>
+<link rel="stylesheet" href="estilo.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+<title>Pagina </title>
+</head>
+<ion-app>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Presupuesto</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content class="ion-padding">
+        <ion-label>Tipo De Pago::</ion-label>
+        <ion-input type="Text" id="Monto"></ion-input>
+
+        <div class="fila">
+            <ion-label>Monto:</ion-label>
+            <ion-input type="Text" id="Monto"></ion-input>
+        </div>
+
+        <div class="fila">
+            <ion-button onclick="guardar">Guardar</ion-button>
+        </div>
+      <!-- <h1>Main Content</h1> -->
+    </ion-content>
+  </ion-app>
+<body>
+
+
+</body>
     <script src="imprimir.js"></script>
 </html>
