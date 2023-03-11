@@ -1,12 +1,22 @@
-//arcvo de java script
+<ion-app>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Presupuesto</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-var campoTexto=document.getElementById("campoTexto");
-console.log(campoTexto);
+<ion-content class="ion-padding">
+    <ion-label>Monto:</ion-label>
+    <ion-input type="Text" id="Monto"></ion-input>
 
-function imprimir(){
-    console.log(campoTexto.value);
-}
+    <div class="fila">
+        <ion-label>Monto:</ion-label>
+        <ion-input type="Text" id="Monto"></ion-input>
+    </div>
 
-function limpiar(){
-    console.clear(campoTexto);
-}
+    <div class="fila">
+        <ion-button onclick="guardar">Guardar</ion-button>
+    </div>
+   //<h1>Main Content</h1>
+</ion-content>
+</ion-app>
