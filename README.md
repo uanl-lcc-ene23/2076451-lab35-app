@@ -1,7 +1,1 @@
-# 2076451-lab35-app
-2076451-Cristian alfredo 
-
-
-@Crisar2001 
-Hola Mundo :( 
-    
+# 2000484-lab35-miapp
