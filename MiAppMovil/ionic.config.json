@@ -1,7 +1,5 @@
 {
-  "name": "MiAppMovil",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "Practica11",
+  "integrations": {},
   "type": "angular"
 }

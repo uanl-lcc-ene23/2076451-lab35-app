@@ -13,7 +13,18 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <ion-button (click)="TomarFoto()">Tomar Foto</ion-button>
-  </div>
+  <ion-fab>
+    <ion-fab-button (click)="tomarFoto()" slot="fixed" vertical="top" horizontal="end" [edge]="true">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor=" let foto of fotos; index as position">
+        <ion-img [src]="foto.webviewPath"></ion-img>
+
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

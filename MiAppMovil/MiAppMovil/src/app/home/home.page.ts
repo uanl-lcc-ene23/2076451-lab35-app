@@ -10,11 +10,16 @@ import { FotoService } from '../foto.service';
 export class HomePage {
 
   constructor(
-    private foto: FotoService) {}
+    private fotoService: FotoService) {}
+
+    fotos = this.fotoService.fotos;
 
     TomarFoto()
     {
-      this.foto.addNewToGallery();
+      this.fotoService.addNewToGallery();
+
+      this.fotos = this.fotoService.fotos;
+
     }
 
 }
