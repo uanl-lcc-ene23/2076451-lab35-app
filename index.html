@@ -1,18 +1,92 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="estilo.css">
-<title>Ola mundo</title>
-<html>
-    <body>
-    <center>
-        <h1>Imprimir en consola</h1>
+<html lang="en">
+<head>
+  <title>Practica11</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="estilos.css">
 
-        <P> Escribe algo abajo </P>
+</head>
 
-        <input type="text" id="campoTexto">
 
-        <button onclick="imprimir()">Imprimir mensaje en consola</button>
-        <button onclick="limpiar()">Limpiar</button>
-    </center>
-    </body>
-    <script src="imprimir.js"></script>
+<body>
+
+    <ion-app>
+
+      <ion-menu content-id="pagina-principal" menu-type="overlay">
+        <ion-header>
+          <ion-toolbar>
+            <ion-tittle>Más opciones</ion-tittle>
+          </ion-toolbar>
+        </ion-header>
+
+
+        <ion-content class="ion-padding">
+          <ion-list>
+              <ion-button>
+                <ion-icon name="home-sharp"></ion-icon>
+                Home
+              </ion-button>
+
+          <ion-item button>
+            <ion-list-header>
+              Navegación Principal
+            </ion-list-header>
+          </ion-item>
+          <ion-item button>
+            <ion-list-header>
+                Opcion 1
+            </ion-list-header>
+          </ion-item>
+          <ion-item button>
+            <ion-list-header>
+                Opcion 2
+            </ion-list-header>
+          </ion-item>
+          </ion-list>
+        </ion-content>
+
+
+      </ion-menu>
+
+
+      <div class="ion-page" id="pagina-principal">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Presupuesto</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+          <ion-label>Articulo:</ion-label>
+          <ion-input type="Text" id="articulo"></ion-input>
+
+          <div class="fila">
+              <ion-label>Monto:</ion-label>
+              <ion-input type="Text" id="monto"></ion-input>
+          </div>
+
+          <div class="fila">
+              <ion-button onclick="guardar()">guardar</ion-button>
+          </div>
+          <p id="mostrarArreglo"></p>
+        <!-- <h1>Main Content</h1> -->
+      </ion-content>
+
+      </div>
+
+    
+      </ion-app>
+</body>
+
+
+<script src="javascrip P1.js"></script>
+
 </html>
